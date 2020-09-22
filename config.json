@@ -1,0 +1,18 @@
+{
+    "db":{
+        "username":"postgres",
+        "password":"1234",
+        "host":"localhost",
+        "database":"thirdEye",
+        "port": 5432
+    },
+    "app":{
+        "master":{
+            "port":3000
+        },
+        "slave":{
+            "port":3001,
+            "defaultMinutes":20
+        }
+    }
+}

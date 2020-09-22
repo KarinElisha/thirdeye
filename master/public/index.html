@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</head>
+<body>
+    <h1>Welcome to Drones</h1>
+    <hr/>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+    
+    
+    <div class="form-group">
+            <input type="text" class="form-control" placeholder="ID" id="droneid"/><br/>
+            <input type="text" class="form-control" placeholder="Payload" id="dronepayload"/><br/>
+            <input type="text" class="form-control" placeholder="IP" id="droneip" /><br/>
+            <input type="text" class="form-control" placeholder="Status" id="dronestatus" /><br/>
+            <button class="btn btn-primary" onclick="postData()">Add/Update Drone</button>
+    </div>
+    
+</div>
+<div class="col-md-6">
+    <input type="text" id="minutes" placeholder="number of minutes"/>
+    <div>
+    <button class="btn btn-primary" onclick="getData()">Get Drones</button>
+    </div>
+    <div class="table-container"></div>
+    
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
